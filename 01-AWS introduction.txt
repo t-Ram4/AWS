@@ -1,0 +1,59 @@
+1. Cloud computing
+
+Before Cloud, people face the problems while they host a website. In order to host a web application, 
+Problems:
+1. they require many servers and they are very expensive.
+2. Other than peak time,most of the servers are idle
+3. Need to maintain the hardware and software of those servers.
+
+Solution:
+1. Instead of buying servers we can rent it from Cloud providers
+2. We can scale up or scale down based on the need 
+3. Maintainence of the servers is taken care by Cloud providers so we can focus on business problems.
+
+Definition:
+Cloud computing is the use of remote servers on the internet to store, manage and process data rather than using local server or personal  computer.
+
+2. AWS
+It is a secure cloud services platform
+
+
+
+AWS Domains
+The following are the different domains that AWS provide services.
+Compute
+Storage
+Database
+Migration
+Networking and Content Delivery
+Management Tools
+Security & Identity, Compliance
+
+Services under domains
+Compute domain
+1.EC2-Elastic Compute Cloud--It is a raw server, we can configure it to make a web server etc.
+It is just like a new PC you can buy.
+
+Migration domain
+1.Snowball-physically transfer data between AWS infrastructure and the local system.
+
+Security & Identity compliance
+1.IAM--it is a security service which provides user permissions to AWS account
+
+Storage domain
+S3-It is a Simple Storage service and it is a file system
+
+Networking and Content Delivery
+Route 53--It is a domain name system, used to translate website name into IP address.
+VPN--Virtual Private Cloud. This service is used to own a private network and have all your AWS resources inside.
+
+Messaging domain
+SES-Simple Email Service
+
+Database domain
+RDS-Relational Database Service
+
+Management Tools domain
+Cloud Watch--It is a service to monitor the cloud resources
+
+

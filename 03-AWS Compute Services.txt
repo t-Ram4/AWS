@@ -1,0 +1,16 @@
+AWS Compute Services:
+1.EC2
+It is a raw server. It can be configured to make a web server. We can create multiple instances of same configuration or we can increase the configuration
+
+2.Lambda
+This service is used to execute background tasks.
+
+3.Elastic Beanstalk
+This service is advanced form of EC2. In this case you do not need to configure yourself, you can choose what confiuration you require. Elastic Beanstalk has only limited environments.
+
+4.Elastic Load balancer
+This service distribute the workload equally among the server instances
+
+5.Auto scaling
+This service automatically scale up and scale down depends on the matrix we set.
+

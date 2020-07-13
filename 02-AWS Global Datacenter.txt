@@ -1,0 +1,12 @@
+AWS Global Datacenter
+
+Regions
+They are independent geographic area. They typically contains 2 or more availability zones.
+Availability Zones
+They are multiple isolated locations/data centers within a region
+
+Edge locations
+They are for caching. they used to cache the medias videos to the nearest location.
+
+Regional Caches
+Services

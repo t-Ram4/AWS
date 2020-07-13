@@ -1,0 +1,13 @@
+AWS DevOps Services
+1.CodeCommit
+This service is used to checkin code to code repository
+2.CloudFormation
+This service is used to create cloud infrastructure using the yml template created by devops guys.
+3.CodeBuild
+This service takes the code from repository and build and unit test and produce deployables.
+4.CodeDeploy
+This service is used to deploy the executables into EC2s.
+5.CodePipeline
+This service is for CI/CD .
+6.CodeStar
+This service is project management.

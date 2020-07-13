@@ -1,0 +1,11 @@
+AWS Database Services
+1.RDS
+It is a Relational Database management service.
+2.DynamoDB
+It is a non-relational Database management service
+3.Aurora
+It is a database by Amazon.It is developed based on MySql.
+4.ElastiCache
+This service cache the resultsets of frequently fired queries to DB thus increases the performance
+5.RedShift
+This service is datawarehouse service.
