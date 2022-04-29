@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region $AWS_REGION)
+  build:
+    commands:
+      - echo Build started on  `date`
+      - echo Building java
+      - cd shareprice
+      - mvn compile
+      - mvn package
+      - echo Building the Docker image...
+      - docker build -t sharepriceapp:tag1 .
+      - docker tag sharepriceapp:tag1 $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/service-registry:sharepriceapp
+  post_build:
+    commands:
+      - echo Build completed on  `date`
+      - echo Pushing the Docker image...
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/service-registry:sharepriceapp
+      - echo Writing definitions file
+      - printf '[{"name":"sharepriceapp-container","imageUri":"%s"}]' $AWS_REGION.amazonaws.com/service-registry:sharepriceapp >taskdefinition.json
+
+artifacts:
+  files: shareprice/taskdefinition.json
